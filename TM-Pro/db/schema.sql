@@ -153,4 +153,4 @@ VALUES (
   'Administrator',
   '#ff00cc'
 )
-ON CONFLICT (username) DO UPDATE SET password = EXCLUDED.password;
+ON CONFLICT (username) DO NOTHING;
